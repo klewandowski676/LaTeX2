@@ -1,0 +1,110 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{tabu}
+\usepackage[labelfont=bf, skip=5pt, font=small]{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[style=chem-acs, articletitle=true]{biblatex}
+\addbibresource{data.bib}
+
+
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0em}
+
+\title{\Large{\textbf{Język LaTeX}}}
+\author{Karol Lewandowski}
+\date{Styczeń 28, 2022}
+
+\begin{document}
+\maketitle
+\newpage
+
+\rule{\textwidth}{0.5pt}
+\begin{abstract}
+	\noindent\blindtext[1]
+\end{abstract}
+\rule{\textwidth}{0.5pt}
+
+\section{Introduction}
+\subsection{Part 1}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae ex eu dolor iaculis imperdiet ut suscipit tortor. Sed commodo luctus mi. Maecenas condimentum velit eu elit lacinia egestas ut ac quam. Proin mollis urna nec eros feugiat, id tempor ligula gravida. Quisque sapien libero, hendrerit at semper vel, sagittis sed metus. Ut sit amet orci quis odio iaculis imperdiet sit amet quis urna. Phasellus dictum ex dui. Sed ac libero interdum, efficitur magna id, mattis arcu. Duis nunc eros, pharetra at orci bibendum, mattis egestas sapien. Morbi fringilla nisi vel eros pellentesque sodales \cite{sherman1995article}.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi finibus id nunc at bibendum. Nullam libero erat, lobortis a augue in, sollicitudin euismod est. Nam eget sapien et ligula tempor viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a dolor eu arcu pharetra euismod eu non enim. Cras nibh purus, egestas at egestas id, facilisis id odio. Sed mi massa, vulputate a elit at, feugiat condimentum purus. Suspendisse potenti \cite{otto1803article}.
+\subsection{Part 2}
+Cras bibendum bibendum ante quis venenatis. Ut pellentesque odio nibh, ut efficitur mi iaculis at. Maecenas vel pellentesque leo, ac auctor lacus. Sed in nibh in felis rhoncus fermentum sit amet et ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vitae justo ac velit consectetur ornare. Morbi sit amet lacus dignissim, cursus ex sed, scelerisque tellus. Aenean pretium tincidunt congue. Mauris lorem ipsum, eleifend at ligula a, pellentesque feugiat metus. Etiam pulvinar varius magna, eget rhoncus purus scelerisque nec. Duis id tristique elit. Praesent eu dapibus mi, viverra varius nisl. Fusce felis nisi, vulputate eget lorem eu, vulputate hendrerit elit. Nullam tempus sollicitudin neque, sed dictum nulla interdum at \cite{dirac}.
+
+Etiam placerat ligula et nibh suscipit porta. Suspendisse ac leo vel velit efficitur ultricies blandit vel ante. Nunc vehicula felis a diam consequat vehicula. Proin odio ante, accumsan in sem cursus, vehicula auctor augue. Nulla fringilla odio sed tortor dictum, quis maximus felis facilisis. Nulla sit amet porttitor nisi. In non ipsum magna. Suspendisse in hendrerit sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum porta commodo metus vitae viverra. Donec sit amet mollis lorem \cite{jones2014conference}.
+
+Quisque bibendum efficitur est ac iaculis. Morbi auctor ultricies ante in vulputate. Cras commodo tincidunt ante, ut scelerisque mauris gravida sit amet. Quisque augue justo, gravida.
+
+\begin{equation}
+	\sigma = Y \cdot \sigma_{ab} \cdot \sqrt{m \cdot a}
+\end{equation}
+
+\noindent\blindtext[4]
+\begin{equation}
+	E = m \cdot c^2
+\end{equation}
+
+\section{Methods}
+\subsection{Part 1}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat nisl felis, ac convallis metus hendrerit cursus. Donec sollicitudin blandit nibh id finibus. Donec a feugiat erat. Nam sed ullamcorper eros. Fusce egestas tellus magna, non condimentum lectus laoreet sit amet. Donec odio enim, sodales a cursus at, scelerisque ac sapien. Mauris sed euismod tortor, nec euismod libero. Maecenas dignissim placerat est. Mauris a fringilla lacus, at faucibus massa. Cras suscipit nulla sed nulla porta convallis. Pellentesque quis sodales sem, vitae semper tellus. Phasellus euismod risus id lectus ultrices, eu laoreet magna tincidunt. See table \ref{tab:people}.
+
+\begin{table}[h!]
+	\centering
+	\caption{Dane}
+	\begin{tabu}{*{4}{X[c]}}
+		\toprule
+		\textbf{Names} & \textbf{Age} & \textbf{Height} & \textbf{Weight (lbs)} \\
+		\midrule
+		Carter & 21 & 6'8 & 90 \\
+		Jan & 18 & 5'6 & 70 \\
+		Maciek & 19 & 5'9 & 75 \\
+		\bottomrule
+	\end{tabu}
+	\label{tab:people}
+\end{table}
+\noindent\blindtext[1]
+
+\newpage
+
+\section{Results}
+\subsection{Part 1}
+Fusce sollicitudin auctor leo ut varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tristique aliquet ante. Pellentesque ornare pharetra leo. Nulla eu faucibus arcu. Morbi at hendrerit est. In non tellus quis orci scelerisque maximus et nec diam. Cras mattis eleifend sapien. Suspendisse bibendum est id tempor porttitor. Suspendisse nisl leo, gravida eu ultrices ac, tempor id mi. Duis tincidunt, ligula ac rhoncus lacinia, purus elit vehicula mauris, id consectetur neque lacus vel tortor. Donec id libero elementum, egestas urna nec, congue sapien. Donec quis nibh consectetur, dictum nunc eu, venenatis nunc. Pellentesque \cite{schooler2011unpublished}.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit ex, egestas in lorem sit amet, faucibus iaculis risus. Aliquam diam dui, facilisis non nibh quis, efficitur congue nisi. Phasellus vestibulum enim a urna interdum, at pellentesque nisl commodo. Pellentesque auctor erat diam, eget mollis magna mollis eleifend. Duis nec est imperdiet, mattis massa sed, sagittis est. Quisque gravida turpis eu dolor vehicula facilisis. Cras et ligula vitae justo interdum efficitur. Fusce sit amet odio in enim tristique tempor ut vel tortor. Cras sed feugiat justo, sed sagittis ante \cite{ripley2011manual}.
+
+\begin{figure}[!t]
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{huragan.jpg}
+		\caption{}
+		\label{fig:img-1}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{huragan2.jpg}
+		\caption{}
+		\label{fig:img-1}
+	\end{subfigure}
+	\caption{Huragany}
+	\label{fig:two-figs}
+\end{figure}
+\subsection{Part 2}
+Maecenas hendrerit, tellus at faucibus ullamcorper, erat lectus porta felis, aliquam pretium enim odio ut orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin in consequat odio. Maecenas malesuada lacus vel justo consectetur fringilla. Vivamus placerat odio nec lectus vulputate, vel maximus leo convallis. Ut id fringilla lacus. Nullam convallis, felis ac rutrum pellentesque, risus eros venenatis dui, ac semper lorem nisi vitae ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas convallis nibh a cursus pellentesque. Donec nec sollicitudin metus. Fusce fermentum egestas condimentum. Aliquam ac odio nec sapien imperdiet accumsan a nec ipsum.
+
+Nullam rutrum congue enim, et malesuada purus pretium id. Cras ante lectus, mattis et turpis sed, sodales lacinia diam. Mauris scelerisque convallis augue eget rhoncus. Fusce faucibus felis a tortor vestibulum porta. Donec eu erat id felis luctus tincidunt nec eu odio. Maecenas auctor commodo eros, suscipit rhoncus ipsum sodales sed. In urna felis, mattis quis facilisis at, fermentum tempus tortor. Curabitur porta condimentum dolor non auctor.
+
+In hac habitasse platea dictumst. Integer feugiat sapien leo, nec ultrices ante mattis venenatis. Pellentesque a nisl eget dolor consequat ultricies. Maecenas erat ipsum, laoreet ut ex eu, rutrum tempor lorem. Sed vestibulum lacinia neque eget tincidunt. Pellentesque ultrices, quam eget sagittis tempus, lorem lectus cursus nisl, ac vehicula dolor dui id est. Curabitur sit amet nisl ut eros pulvinar sodales. Sed nec metus nec nulla tincidunt fermentum. In hac habitasse platea dictumst. Praesent posuere, sapien in imperdiet malesuada, lectus leo tempus lectus, ut tempus magna mi a lacus. Duis placerat nisl id efficitur rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Maecenas a vestibulum tortor. Proin mollis congue mauris, pellentesque viverra neque vestibulum ut. In lobortis urna arcu, a tincidunt quam consectetur ac. Sed arcu turpis, suscipit.
+
+\printbibliography
+\end{document}
